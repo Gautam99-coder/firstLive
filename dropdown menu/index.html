@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">YourLogo</a>
+            
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="#" class="navbar-links">Home</a>
+                </li>
+                
+                <!-- Dropdown Menu Item -->
+                <li class="navbar-item dropdown">
+                    <a href="#" class="navbar-links">
+                        Services <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">Web Design</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">SEO</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">Marketing</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="navbar-item">
+                    <a href="#" class="navbar-links">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-links">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
